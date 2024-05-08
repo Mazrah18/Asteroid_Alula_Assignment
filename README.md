@@ -1,6 +1,7 @@
 # Asteroid Tracker
 
-Brief description of your project.
+This project was developed as part of a programming assignment for Alula.
+
 
 ## Installation
 
