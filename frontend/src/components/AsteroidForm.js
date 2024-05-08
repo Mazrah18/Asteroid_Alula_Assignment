@@ -8,8 +8,18 @@ function AsteroidForm({ setAsteroids, setError }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!startDate || !endDate || !distance) {
+      setError('All fields are required');
+      return;
+    }
+
+    if (new Date(endDate) < new Date(startDate)) {
+      setError('End date cannot be before start date');
+      return;
+    }
+
     try {
-      const response = await axios.post('http://localhost:3001/asteroids', {
+      const response = await axios.post('https://asteroid-alula-assignment.vercel.app/asteroids', {
         dateStart: startDate,
         dateEnd: endDate,
         stringDist: {
@@ -45,8 +55,10 @@ function AsteroidForm({ setAsteroids, setError }) {
         <br />
         <button type="submit">Fetch Asteroids</button>
       </form>
+      
     </div>
   );
 }
 
 export default AsteroidForm;
+
