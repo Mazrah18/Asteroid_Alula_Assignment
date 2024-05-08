@@ -18,7 +18,7 @@ This project was developed as part of a programming assignment for Alula.
 
 5. Navigate to the frontend directory: cd frontend
 6. Install dependencies: npm i
-7. Start the frontend server: npm start
+7. Start the frontend server: npm start 
 
 
 ## Running the command line Interface
