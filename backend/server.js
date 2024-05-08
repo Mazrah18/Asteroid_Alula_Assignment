@@ -19,9 +19,9 @@ const fetchAsteroidData = async (startDate, endDate, distance) => {
 
     const asteroids = [];
 
-    const neoObjects = response.data.near_earth_objects;
-    Object.keys(neoObjects).forEach(date => {
-      neoObjects[date].forEach(asteroid => {
+    const Objects = response.data.near_earth_objects;
+    Object.keys(Objects).forEach(date => {
+      Objects[date].forEach(asteroid => {
         if (asteroid.close_approach_data[0].miss_distance.kilometers <= distance) {
           asteroids.push(asteroid.name);
         }
