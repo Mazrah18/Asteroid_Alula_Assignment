@@ -7,14 +7,11 @@ This project was developed as part of a programming assignment for Alula.
 
 1. Clone the repository:
 
-
-
 ### Backend Installation
 
 2. Navigate to the backend directory:  cd backend
 3. Install dependencies: npm i
 4. Start the backend server: npm start
-
 
 
 ### Frontend Installation
