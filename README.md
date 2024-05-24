@@ -1,6 +1,5 @@
 # Asteroid Tracker
-
-This project was developed as part of a programming assignment for Alula.
+This project was made using React framework and the data was called from NASA's official API
 
 
 ## Installation
